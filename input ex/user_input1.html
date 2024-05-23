@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー入力</title>
+    <style>
+      h1{
+        background-color: antiquewhite;
+        color: blue;
+      }  
+      form{
+        background-color:aquamarine;
+        color: brown;
+        font-size: 16px;
+
+      }
+    </style>
+</head>
+
+<body>
+  <h1>情報登録</h1>
+
+  <form action="user_input1.php" method="get">
+      <table>
+          <tr>
+              <td>ユーザー名:</td>
+              <td>
+                  <input type="text" name="namae1" value="">
+              </td>
+          <tr>
+              <td>ペットの名前：</td>
+              <td>
+                  <input type="text" name="namae2" value="">
+              </td>
+          </tr>
+          <tr>
+              <td>ペットの種類:</td>
+              <td>
+                  <select name="syurui">
+                      <option value="ワンちゃん">いぬ</option>
+                      <option value="にゃんちゃん">ねこ</option>
+                  </select>
+              </td>
+          </tr>
+          <tr>
+              <td>ペットの性別：</td>
+              <td>
+                  ♂<input type="radio" name="seibetu" value="男の子">
+                  ♀<input type="radio" name="seibetu" value="女の子">
+              </td>
+          </tr>
+          <tr>
+              <td>ペットの年齢(天数):</td>
+              <td>
+                  <input type="text" name="age">
+              </td>
+          </tr>
+          <tr>
+              <td>ペットの体重：</td>
+              <td>
+                  <input type="text" name="weight" value="">
+              </td>
+          </tr>
+          <tr>
+              <td>ワクチン接種時間：</td>
+              <td>
+                  <input type="text" name="time" value="">
+              </td>
+          </tr>
+      </table>
+      <p><input type="submit" name="submit" value="送信"></p>
+  </form>
+  <p><a href="../input ex/user_input.html">前のページへ</a></p>
+      
+<img src="../cat.jpg" width="500" height="500"alt="">
+<img src="../dog.jpg" width="500" height="500" alt="">
+</body>
+
+</html>
